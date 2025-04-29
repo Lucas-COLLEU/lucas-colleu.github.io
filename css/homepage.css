@@ -70,19 +70,20 @@
   
   .sidenav a {
     height: 61px;
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 50% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: #575756;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
-    line-height: 10px;
-    border-bottom: 1px solid #eee;
+    line-height: normal;
+    border-bottom: 1px solid #DDDDDD;
     transition: background-color 0.3s, color 0.3s;
+    padding: 0;
   }
+  
   
   .sidenav a:hover {
     background-color: #ddd;
@@ -98,6 +99,7 @@
   
   .dropdown-content {
     display: none;
+    height: 61px;
     position: absolute;
     top: 0;
     left: 100%;
@@ -112,6 +114,7 @@
   }
   
   .dropdown-content a {
+    height: 61px;
     display: flex;
     font-size: 11px;
     line-height: 10px;
