@@ -15,7 +15,6 @@
 
   </header>
 
-  <!-- Barre verticale à gauche -->
   <aside class="sidebar">
     <nav class="sidenav">
       <div class="dropdown">
@@ -67,8 +66,23 @@
     </nav>
   </aside>
 
-  <!-- Contenu principal -->
   <main class="content">
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] === "POST" && !empty($_POST['nom'])) {
+        $nom = htmlspecialchars($_POST['nom']);
+        echo "<p>Bonjour, <strong>$nom</strong> ! Ravi de vous voir ici.</p>";
+    } else {
+    ?>
+        <form method="post" action="">
+            <label for="nom">Entrez votre nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <button type="submit">Envoyer</button>
+        </form>
+    <?php
+    }
+    ?>
+
     <h1>Bienvenue sur le site</h1>
     <p>Voici le contenu principal. Scrollez pour tester la barre fixe en haut et la sidebar fixe à gauche.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et turpis et leo egestas suscipit.</p>
