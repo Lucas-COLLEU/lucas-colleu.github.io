@@ -122,6 +122,10 @@
     display: block;
 }
 
+.left .small-img {
+    width: 15%;
+}
+
 .right {
     width: 31.3%;
     background-color: #fff;
