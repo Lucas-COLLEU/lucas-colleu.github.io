@@ -101,28 +101,33 @@
     width: 100%;
   }
 
-  .container {
-    width: 944px;
+.container {
+    width: 73,75%;
     height: 100%;
     display: flex;
     background-color: #fff;
     justify-content: center;
   }
   
-  .left {
-    width: 624px;
+.left {
+    width: 66.1%;
     background-color: #fff;
     padding: 10px;
     box-sizing: border-box;
+}
 
-  }
-  
-  .right {
-    width: 296px;
+.left img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.right {
+    width: 31.3%;
     background-color: #fff;
     padding: 10px;
     box-sizing: border-box;
-  }
+}
 
   .left p {
     color: #7b7b7a;
