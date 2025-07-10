@@ -143,8 +143,8 @@
 
     .left p1 {
     color: #1d1d1b;
-    font-size: 15px;
-    line-height: 15px;
+    font-size: 18px;
+    line-height: 20px;
     font-weight: 400;
     height: 18px;
   }
@@ -341,11 +341,17 @@ a {
     transition: color 0.3s;
 }
 
-.nav-link.active {
+.nav-link:hover {
+    background-color: #ffbb00;
     color: #000000;
-    text-decoration: underline;
+    cursor: pointer;
 }
 
+.nav-link2:hover {
+    background-color: #ffbb00;
+    color: #000000;
+    cursor: pointer;
+}
 .nav-link2 {
     display: inline-block;
     width: 90px;
@@ -357,6 +363,11 @@ a {
     font-size: 14px;
     font-weight: bold;
     transition: color 0.3s;
+}
+
+.nav-link.active {
+    color: #000000;
+    text-decoration: underline;
 }
 
 .nav-link2.active {
