@@ -246,3 +246,43 @@
   padding: 10px;
   box-sizing: border-box;
 }
+
+.career-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.career-table th, .career-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.career-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container2 p1 {
+  text-align: right;
+  margin: 0 20px;
+}
+
+.container2 img {
+  max-height: 100px;
+  object-fit: contain;
+}
+
+a {
+    color: #3873b8;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
