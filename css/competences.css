@@ -305,3 +305,9 @@
     max-width: 75%;
     height: auto;     
 }
+
+.nav-link:hover {
+    background-color: #ffbb00;
+    color: #000000;
+    cursor: pointer;
+}
